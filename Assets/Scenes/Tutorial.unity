@@ -1619,6 +1619,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6872575990672869091}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &427278922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8979861125576116321, guid: dccd0744c2aefd249871433ff022bedb,
+    type: 3}
+  m_PrefabInstance: {fileID: 6872575990672869091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &428634643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4614,11 @@ PrefabInstance:
       propertyPath: ContarBa
       value: 
       objectReference: {fileID: 861332003}
+    - target: {fileID: 3014689163635436212, guid: dccd0744c2aefd249871433ff022bedb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.016
+      objectReference: {fileID: 0}
     - target: {fileID: 5790316722695639977, guid: dccd0744c2aefd249871433ff022bedb,
         type: 3}
       propertyPath: m_IsTrigger
@@ -4830,8 +4841,19 @@ PrefabInstance:
       propertyPath: lashActivated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8796842613624933767, guid: dccd0744c2aefd249871433ff022bedb,
+        type: 3}
+      propertyPath: ColliderSlash
+      value: 
+      objectReference: {fileID: 427278922}
+    - target: {fileID: 8796842613624933767, guid: dccd0744c2aefd249871433ff022bedb,
+        type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6872575990037008070, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
     - {fileID: 6872575990037008068, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
     - {fileID: 3913222078351604273, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
+    - {fileID: 8600590205942212286, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dccd0744c2aefd249871433ff022bedb, type: 3}

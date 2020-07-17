@@ -13,11 +13,13 @@ public class ColliderLash : MonoBehaviour
     public bool loop = false;
     public bool lashActivated = true;
     public GameObject ArañaE;
+    //public GameObject ColliderSlash;
 
     // Start is called before the first frame update
     void Start()
     {
         lashActivated = true;
+        //ColliderSlash.SetActive(false);
 
     }
 
@@ -35,11 +37,15 @@ public class ColliderLash : MonoBehaviour
             }
 
             if (Input.GetMouseButton(0))
+            {
+                
                 if (loop)
                 {
                     float distCovered = Mathf.PingPong(Time.time - startTime, journeyLength / speed);
                     transform.position = Vector3.Lerp(startMarker.position, endMarker.position, distCovered / journeyLength);
                 }
+            }
+
 
         }
         
