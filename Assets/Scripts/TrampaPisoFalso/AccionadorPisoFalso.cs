@@ -20,7 +20,7 @@ public class AccionadorPisoFalso : MonoBehaviour
         if (colisionActive == true)
         { 
             timer += Time.deltaTime;
-            if (timer >= 5)
+            if (timer >= 3)
             {
                 trampaActiva = true;
                 timer = 0;

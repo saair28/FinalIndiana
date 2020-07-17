@@ -65,7 +65,7 @@ public class EnemyEscara : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bala"))
         {
-            vida = vida - 1;
+            vida = vida - 5;
         }
 
         if (collision.gameObject.CompareTag("Player"))

@@ -12,7 +12,10 @@ public class ColliderLash : MonoBehaviour
     private float startTime;
     public bool loop = false;
     public bool lashActivated = true;
-    public GameObject ArañaE;
+    public ArañaE araña;
+    public Boss boss;
+    public EnemyEscara EscarabajoN;
+    public CienPies cienpies;
     //public GameObject ColliderSlash;
 
     // Start is called before the first frame update
@@ -28,6 +31,14 @@ public class ColliderLash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        araña = ArañaE.instance;
+
+        boss = Boss.instance;
+
+        EscarabajoN = EnemyEscara.instance;
+
+        cienpies = CienPies.instance;
+
         if (lashActivated == true)
         {
             if (!loop)
@@ -55,7 +66,22 @@ public class ColliderLash : MonoBehaviour
     {
         if (other.gameObject.CompareTag ("Araña"))
         {
-            ArañaE.GetComponent<ArañaE>().vida = ArañaE.GetComponent<ArañaE>().vida  - 2;
+            araña.GetComponent<ArañaE>().vida = araña.GetComponent<ArañaE>().vida  - 2;
+        }
+
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            boss.GetComponent<ArañaE>().vida = boss.GetComponent<ArañaE>().vida - 2;
+        }
+
+        if (other.gameObject.CompareTag("Cienpies"))
+        {
+            cienpies.GetComponent<ArañaE>().vida = cienpies.GetComponent<ArañaE>().vida - 2;
+        }
+
+        if (other.gameObject.CompareTag("EscarabajoN"))
+        {
+            EscarabajoN.GetComponent<ArañaE>().vida = EscarabajoN.GetComponent<ArañaE>().vida - 2;
         }
     }
 

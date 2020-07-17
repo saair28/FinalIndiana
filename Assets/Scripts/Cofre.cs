@@ -12,6 +12,8 @@ public class Cofre : MonoBehaviour
         public int probabilidad;
     }
 
+    public static Cofre instance;
+
     public List <Dropeo> LootTable = new List<Dropeo>();
 
     public int dropChance;
@@ -99,6 +101,11 @@ public class Cofre : MonoBehaviour
         if (bala == true)
         {
             if (collision.gameObject.CompareTag("Bala"))
+            {
+                destruir = true;
+            }
+
+            if(collision.gameObject.CompareTag("Latigo"))
             {
                 destruir = true;
             }
