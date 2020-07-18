@@ -4995,7 +4995,7 @@ PrefabInstance:
     - target: {fileID: 6692434422168202005, guid: dccd0744c2aefd249871433ff022bedb,
         type: 3}
       propertyPath: vida
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6872575988947458252, guid: dccd0744c2aefd249871433ff022bedb,
         type: 3}
@@ -5194,4 +5194,5 @@ PrefabInstance:
     - {fileID: 8600590205942212286, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
     - {fileID: 6872575988947458257, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
     - {fileID: 6872575989898803319, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
+    - {fileID: 6692434422168202005, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dccd0744c2aefd249871433ff022bedb, type: 3}
