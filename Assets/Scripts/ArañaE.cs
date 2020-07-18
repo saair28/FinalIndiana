@@ -77,5 +77,11 @@ public class ArañaE : MonoBehaviour
         {
 
         }
+
+        if (collision.gameObject.CompareTag("Latigo"))
+        {
+            vida = vida - 3;
+        }
+        
     }
 }

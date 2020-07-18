@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &561109034466599511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7767450739492728355}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7767450739492728355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561109034466599511}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.034111023, y: 1.772, z: -0.05936688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033877164635491422}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8708560393208999673
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,9 +39,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1033877164635491422}
+  - component: {fileID: 7808340337989795433}
+  - component: {fileID: 8866994944257526079}
   m_Layer: 0
   m_Name: cofeCerrado
-  m_TagString: Untagged
+  m_TagString: Cofre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,9 +63,52 @@ Transform:
   - {fileID: 7912515529778556760}
   - {fileID: 914727513136465938}
   - {fileID: 7496818457940545350}
+  - {fileID: 7767450739492728355}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7808340337989795433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708560393208999673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80930ede609b4b0498a089d017c99b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LootTable:
+  - name: Escarabajo
+    objeto: {fileID: 7101580348120904043, guid: 2aecafb5c1785fb45a55305401efb2fc,
+      type: 3}
+    probabilidad: 60
+  - name: "Ara\xF1a"
+    objeto: {fileID: 5486886891137068720, guid: 2869c836a590bea458e89ceb05b80980,
+      type: 3}
+    probabilidad: 40
+  dropChance: 80
+  dropea: 0
+  Cumplirfuncion: 1
+  player: {fileID: 0}
+  destruir: 0
+  bala: 0
+  objeto: {fileID: 561109034466599511}
+  Spawneo: 0
+--- !u!65 &8866994944257526079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8708560393208999673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7546933, y: 0.86932755, z: 1}
+  m_Center: {x: -0.0057048798, y: 0.8757267, z: 0}
 --- !u!1001 &2933059680239338562
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -118,6 +118,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: gemaplata
       objectReference: {fileID: 0}
+    - target: {fileID: -431535413280725536, guid: 575af82bd0b756f4aa1384a9b7f4b0f7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60854a09d2db64a409392cb287388219, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575af82bd0b756f4aa1384a9b7f4b0f7, type: 3}
 --- !u!4 &8115628655827983188 stripped
@@ -133,6 +138,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7390195997727038661}
     m_Modifications:
+    - target: {fileID: -7341873028566417077, guid: 2c1a2183b442d5e4a944ff0f33ab342e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60854a09d2db64a409392cb287388219, type: 2}
     - target: {fileID: -4216859302048453862, guid: 2c1a2183b442d5e4a944ff0f33ab342e,
         type: 3}
       propertyPath: m_LocalPosition.x

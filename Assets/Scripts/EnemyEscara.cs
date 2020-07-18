@@ -77,5 +77,10 @@ public class EnemyEscara : MonoBehaviour
         {
 
         }
+
+        if (collision.gameObject.CompareTag("Latigo"))
+        {
+            vida = vida - 3;
+        }
     }
 }

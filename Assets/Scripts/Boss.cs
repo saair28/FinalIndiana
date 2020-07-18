@@ -31,6 +31,8 @@ public class Boss : MonoBehaviour
 
     public float dist;
 
+    public GameObject Win;
+
 
 
     // Start is called before the first frame update
@@ -39,6 +41,8 @@ public class Boss : MonoBehaviour
         initialPosition = transform.position;
 
         instance = this;
+
+        Win.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,7 +56,9 @@ public class Boss : MonoBehaviour
 
         if (vida <= 0)
         {
-            Destroy(gameObject);
+            Win.SetActive(true);
+
+            Destroy();
         }
 
         Movimiento();
@@ -101,6 +107,11 @@ public class Boss : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, AttackRad);
     }
 
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
@@ -116,6 +127,11 @@ public class Boss : MonoBehaviour
         if (collision.gameObject.CompareTag("Araña"))
         {
 
+        }
+
+        if (collision.gameObject.CompareTag("Latigo"))
+        {
+            vida = vida - 3;
         }
     }
 

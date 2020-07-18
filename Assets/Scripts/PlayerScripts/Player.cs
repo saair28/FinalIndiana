@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class Player : MonoBehaviour
     public int Could = 1;
 
     public bool abrir = false;
+
+    public bool bAbrir = false;
 
     public int municion;
 
@@ -195,9 +198,27 @@ public class Player : MonoBehaviour
             municion += 1;
         }
 
-        if (collision.gameObject.CompareTag("Cienpies"))
+        if (collision.gameObject.CompareTag("CienPies"))
         {
            GetComponent<Health>().RestarVida(3);
+        }
+        if (manos == true)
+        {
+            if (collision.gameObject.CompareTag("Boton"))
+            {
+                bAbrir = true;
+            }
+
+        }
+
+        if (collision.gameObject.CompareTag("Muerte"))
+        {
+            GetComponent<Health>().RestarVida(100000);
+        }
+
+        if (collision.gameObject.CompareTag("WIN"))
+        {
+            SceneManager.LoadScene("Win");
         }
     }
 }

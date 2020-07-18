@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7207539404523005257}
+  - component: {fileID: -7447798427795106230}
   m_Layer: 0
   m_Name: puerta
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &-7447798427795106230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586509100412259467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.233237, y: 6.35575, z: 1}
+  m_Center: {x: 0.12515426, y: 3.2423692, z: 0}
 --- !u!1001 &1960693346696890216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,6 +109,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3884025908589302376, guid: e299c47061abad34a988b7e1fd59b547,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0710486b4bc5fb34d92a223a0f9f5dda, type: 2}
     - target: {fileID: -927199367670048503, guid: e299c47061abad34a988b7e1fd59b547,
         type: 3}
       propertyPath: m_Name
@@ -175,6 +194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: puerta
       objectReference: {fileID: 0}
+    - target: {fileID: 4754573821580268423, guid: fe575d7e46667e54fbca6ff1b502e5b2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db9fb7aabd779c04aaaa83414e1dd3e0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe575d7e46667e54fbca6ff1b502e5b2, type: 3}
 --- !u!4 &7083481351927160191 stripped
@@ -250,6 +274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: puertaGema
       objectReference: {fileID: 0}
+    - target: {fileID: 5110753326674048222, guid: 86b023f8a9a9d62408a0bfb93d3b1a34,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0710486b4bc5fb34d92a223a0f9f5dda, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86b023f8a9a9d62408a0bfb93d3b1a34, type: 3}
 --- !u!4 &2295351261031371968 stripped

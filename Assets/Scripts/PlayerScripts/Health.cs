@@ -48,10 +48,17 @@ public class Health : MonoBehaviour
                 hearts[i].enabled = false; 
             }
         }
-        if (vida == 0)
+        if (vida <= 0)
         {
             SceneManager.LoadScene("Game Over");
+
+            SeDestruye();
         }
+    }
+
+    public void SeDestruye()
+    {
+        Destroy(gameObject);
     }
     public void RestarVida(int cantidad)
     {

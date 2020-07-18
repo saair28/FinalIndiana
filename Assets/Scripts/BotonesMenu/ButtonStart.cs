@@ -19,8 +19,6 @@ public class ButtonStart : MonoBehaviour
 
     public void BotonStart()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("tutoriaal");
     }
-
-    
 }

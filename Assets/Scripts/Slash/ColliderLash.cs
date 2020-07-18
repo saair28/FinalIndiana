@@ -66,22 +66,22 @@ public class ColliderLash : MonoBehaviour
     {
         if (other.gameObject.CompareTag ("Araña"))
         {
-            araña.GetComponent<ArañaE>().vida = araña.GetComponent<ArañaE>().vida  - 2;
+            araña.GetComponent<ArañaE>().vida = araña.GetComponent<ArañaE>().vida  - 3;
         }
 
         if (other.gameObject.CompareTag("Boss"))
         {
-            boss.GetComponent<ArañaE>().vida = boss.GetComponent<ArañaE>().vida - 2;
+            boss.vida = boss.vida - 3;
         }
 
-        if (other.gameObject.CompareTag("Cienpies"))
+        if (other.gameObject.CompareTag("CienPies"))
         {
-            cienpies.GetComponent<ArañaE>().vida = cienpies.GetComponent<ArañaE>().vida - 2;
+            cienpies.vida = cienpies.vida - 3;
         }
 
         if (other.gameObject.CompareTag("EscarabajoN"))
         {
-            EscarabajoN.GetComponent<ArañaE>().vida = EscarabajoN.GetComponent<ArañaE>().vida - 2;
+            EscarabajoN.GetComponent<EnemyEscara>().vida = EscarabajoN.GetComponent<EnemyEscara>().vida - 3;
         }
     }
 

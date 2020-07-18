@@ -22,6 +22,10 @@ TagManager:
   - target
   - Boss
   - Craneo
+  - Boton
+  - Muerte
+  - Latigo
+  - WIN
   layers:
   - Default
   - TransparentFX

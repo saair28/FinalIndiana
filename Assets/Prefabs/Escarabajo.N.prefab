@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!54 &465903793390833443
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499938736481049300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &6285125592824211018
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,8 +110,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.1004639
+  m_Center: {x: 0, y: -0.26651, z: 0}
 --- !u!54 &7381524111113914871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -110,7 +126,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &-686925633255734846
 MonoBehaviour:
@@ -127,7 +143,7 @@ MonoBehaviour:
   vida: 15
   velo: 20
   ataq: 1
-  VisionRad: 20
+  VisionRad: 7
   player: {fileID: 0}
   dist: 0
 --- !u!1001 &4878430471406109661
@@ -199,6 +215,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69cea95ce13a95249b1600404ce796d3, type: 3}
+--- !u!1 &3499938736481049300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 69cea95ce13a95249b1600404ce796d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4878430471406109661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &488955450130426055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 69cea95ce13a95249b1600404ce796d3,

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Cofre : MonoBehaviour
 {
+    public static Cofre instance;
+
     [System.Serializable]
     public class Dropeo
     {
@@ -12,9 +14,7 @@ public class Cofre : MonoBehaviour
         public int probabilidad;
     }
 
-    public static Cofre instance;
-
-    public List <Dropeo> LootTable = new List<Dropeo>();
+    public List<Dropeo> LootTable = new List<Dropeo>();
 
     public int dropChance;
 
@@ -35,7 +35,7 @@ public class Cofre : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -47,10 +47,10 @@ public class Cofre : MonoBehaviour
 
         if (dropea == true && Cumplirfuncion == true && Spawneo == true)
         {
-           CalcularDropeo();
+            CalcularDropeo();
         }
         else
-        {}
+        { }
 
         if (destruir == true && Cumplirfuncion == true)
         {
@@ -59,7 +59,7 @@ public class Cofre : MonoBehaviour
             Destroy(gameObject);
         }
         else
-        {}
+        { }
     }
 
     public void CalcularDropeo()
@@ -101,11 +101,6 @@ public class Cofre : MonoBehaviour
         if (bala == true)
         {
             if (collision.gameObject.CompareTag("Bala"))
-            {
-                destruir = true;
-            }
-
-            if(collision.gameObject.CompareTag("Latigo"))
             {
                 destruir = true;
             }
