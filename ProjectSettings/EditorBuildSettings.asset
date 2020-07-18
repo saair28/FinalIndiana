@@ -9,6 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b4db7ec92c8b4bf4385e2a6b11028817
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/tutoriaal.unity
     guid: e6bc159e19ad9604f9943d4f7bd5588d
   - enabled: 1
@@ -17,6 +18,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 4e7365bce6d3d0747933251fcd1b0546
+=======
+    path: Assets/Scenes/Tutorial.unity
+    guid: bbe716e54fd4597489f3f3e2be776b35
+>>>>>>> bf77bf45bfa855edf3845f588dd4946f82a342eb
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: decb94f4797ad964496d1af5af2ad134
