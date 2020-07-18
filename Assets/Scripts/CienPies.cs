@@ -4,67 +4,111 @@ using UnityEngine;
 
 public class CienPies : MonoBehaviour
 {
-    public GameObject Bicho;
+    public static CienPies instance;
 
-    public float contador;
+    [System.Serializable]
+    public class Dropeo
+    {
+        public string name;
+        public GameObject objeto;
+        public int probabilidad;
+    }
 
-    public float Lim;
+    public List<Dropeo> LootTable = new List<Dropeo>();
 
-    public float Retard;
+    public int dropChance;
 
-    public float Lim2;
+    public bool dropea = false;
 
-    public int vida = 20;
+    public bool Cumplirfuncion = true;
 
     public Player player;
 
-    public int ataq = 3;
+    public bool destruir = false;
+
+    public bool bala;
+
+    public GameObject objeto;
+
+    public bool Spawneo = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         player = Player.instance;
 
-       contador = contador + 1 * Time.deltaTime;
+        dropea = player.GetComponent<Player>().abrir;
 
-       if (contador <= 0)
-       {
-         Bicho.SetActive(false);
-       }
+        if (dropea == true && Cumplirfuncion == true && Spawneo == true)
+        {
+            CalcularDropeo();
+        }
+        else
+        { }
 
-       if (contador >= Lim)
-       {
-         Bicho.SetActive(true);
+        if (destruir == true && Cumplirfuncion == true)
+        {
+            CalcularDropeo();
 
-         Retard = Retard + 1 * Time.deltaTime;
+            Destroy(gameObject);
+        }
+        else
+        { }
+    }
 
-          if (Retard >= Lim2)
-          {
-              contador = -0.5f;
+    public void CalcularDropeo()
+    {
+        int calc_dropChance = Random.Range(0, 101);
 
-                Retard = 0;
-          }
+        if (calc_dropChance > dropChance)
+        {
+            Debug.Log("No hay loot para ti");
+            return;
+        }
 
-       }
+        if (calc_dropChance <= dropChance)
+        {
+            int itemWeight = 0;
+
+            for (int i = 0; i < LootTable.Count; i++)
+            {
+                itemWeight += LootTable[i].probabilidad;
+            }
+            Debug.Log("itemWeigth =" + itemWeight);
+
+            int RandomValue = Random.Range(0, itemWeight);
+
+            for (int j = 0; j < LootTable.Count; j++)
+            {
+                if (RandomValue <= LootTable[j].probabilidad)
+                {
+                    Instantiate(LootTable[j].objeto, objeto.transform.position, Quaternion.identity);
+                }
+            }
+
+            Cumplirfuncion = false;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Bala"))
+        if (bala == true)
         {
-            vida = vida - 5;
+            if (collision.gameObject.CompareTag("Bala"))
+            {
+                destruir = true;
+            }
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<Health>().RestarVida(ataq);
+            Spawneo = true;
         }
     }
 }

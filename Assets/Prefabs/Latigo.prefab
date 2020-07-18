@@ -146,6 +146,8 @@ MonoBehaviour:
   journeyLength: 1
   loop: 0
   lashActivated: 0
+  "Ara\xF1aE": {fileID: 94449733794690584, guid: ca4a58d72e11bc047a3bf995b1b83e3b,
+    type: 3}
 --- !u!54 &2293881771490239138
 Rigidbody:
   m_ObjectHideFlags: 0

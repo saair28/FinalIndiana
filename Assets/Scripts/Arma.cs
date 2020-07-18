@@ -47,18 +47,16 @@ public class Arma : MonoBehaviour
 
             timer += Time.deltaTime;
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                 //&& timer > tiempoDeDisparo
-                timer = 0;
 
-                restarMuni = true;
-            }
+           restarMuni = true;
 
-            else
-            {
-                restarMuni = false;
-            }
+           timer = 0;
+        }
+
+
+        else
+        {
+            restarMuni = false;
         }
     }
 }

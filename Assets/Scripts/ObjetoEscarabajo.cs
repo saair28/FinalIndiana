@@ -10,7 +10,7 @@ public class ObjetoEscarabajo : MonoBehaviour
 
     public int escarabajo;
 
-    public GameObject Player;
+    public Player Player;
 
     public bool restarEscara = false;
 
@@ -29,6 +29,8 @@ public class ObjetoEscarabajo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Player = Player.instance;
+
         Contador = Player.GetComponent<Player>().ContadorDeEscarabajos;
 
         vida = Player.GetComponent<Health>().health;

@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4741096906184120536}
   m_Layer: 0
   m_Name: Craneo
-  m_TagString: Untagged
+  m_TagString: Craneo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   dropea: 0
   Cumplirfuncion: 1
   player: {fileID: 0}
-  manos: 0
   destruir: 0
   bala: 1
   objeto: {fileID: 841321072599836172}
+  Spawneo: 0
