@@ -93,10 +93,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-=======
+
   m_Size: {x: 2.0727615, y: 1, z: 1}
   m_Center: {x: -0.53638077, y: 0, z: 0}
 --- !u!114 &575582891643413684
@@ -119,7 +116,7 @@ MonoBehaviour:
   vida: 20
   player: {fileID: 0}
   ataq: 3
->>>>>>> a85115b3182db137f7ca9276b2b7ede6853dc192
+
 --- !u!1 &575582891736518340
 GameObject:
   m_ObjectHideFlags: 0
